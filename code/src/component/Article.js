@@ -1,4 +1,6 @@
 import React from 'react';
+// import { Artist } from './Artist';
+// import { Album } from './Album';
 
 export const Article = (props) => {
 	return (
@@ -9,7 +11,6 @@ export const Article = (props) => {
 				src={props.albumCover}
 			/>
 			<h2 className="album-name">{props.albumName}</h2>
-			<h3 className="band-name">{props.bandName}</h3>
 		</article>
 	);
 };
