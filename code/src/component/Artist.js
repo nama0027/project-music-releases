@@ -1,17 +1,15 @@
 import React from 'react';
 
+//receiving props from the Article.js
 export const Artist = (props) => {
-	console.log('i m here');
-
+	//rendering artist url and name for each album in this component
 	return (
-		<h2 className="artist-name">
+		<p className="artist-name">
 			{' '}
-			<a href="{props.artistUrl[0]}" className="artistUrl" target="_blank">
+			<a href={props.artistUrl[0]} className="artistUrl" target="_blank">
 				{' '}
 				{props.artistName}
 			</a>
-		</h2>
+		</p>
 	);
 };
-
-/* On line 9 problem with the artist link. The link is not going to the page of the artist. We managed to get the links (we have confirmed this by console.log) and when we even tried with and youtube link that that works */
