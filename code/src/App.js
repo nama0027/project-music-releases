@@ -5,6 +5,7 @@ import { Article } from './component/Article';
 console.log(data);
 
 export const App = () => {
+
 	return (
 		//react fragment <> </> which are transparent tags, bc you can only have 1 mother container.
 		<>
@@ -34,4 +35,5 @@ export const App = () => {
 			</div>
 		</>
 	);
+
 };

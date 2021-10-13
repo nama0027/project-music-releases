@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 //receiving props from the Article.js
 export const Album = (props) => {
 	//rendering album url and album name in this component
