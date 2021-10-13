@@ -9,6 +9,8 @@ console.log(data);
 export const App = () => {
 	return data.albums.items.map((album) => {
 		const nameofArtist = album.artists.map((item) => item.name);
+		const artistLink = album.artists.map((url) => url.external_urls.spotify);
+		console.log(artistLink);
 		return (
 			<div>
 				<Article
@@ -17,7 +19,7 @@ export const App = () => {
 					albumName={album.name}
 					// bandName={album.artists}
 				/>
-				<Artist artistName={nameofArtist} />
+				<Artist artistName={nameofArtist} artistUrl={artistLink} />
 			</div>
 		);
 	});
