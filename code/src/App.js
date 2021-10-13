@@ -14,7 +14,11 @@ export const App = () => {
 			{/* added the container div w/ class name app-ui for styling */}
 			<div className="app-ui">
 				{data.albums.items.map((album) => {
-					const nameofArtist = album.artists.map((item) => item.name); //variable for getting the artists name from data.jason
+					let index;
+					const nameofArtist = album.artists.map((item, i) => {
+						index = i;
+						return item.name;
+					}); //variable for getting the artists name from data.jason
 					const artistLink = album.artists.map(
 						(url) => url.external_urls.spotify
 					); //variable for getting the artist url from data.jason
@@ -26,8 +30,9 @@ export const App = () => {
 								albumCover={album.images[1].url} //sending the image link to the article component
 								albumName={album.name} //sending the album name to the article component
 								albumLink={album.external_urls.spotify} //sending the album url to the article component
-								bandName={nameofArtist} //sending the name to the article component
-								bandUrl={artistLink} //sending the link to the article component
+								bandName={album.artists} //sending the name to the article component
+								
+								 //sending the link to the article component
 							/>
 						</div>
 					);

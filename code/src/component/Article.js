@@ -8,9 +8,9 @@ export const Article = (props) => {
 		<article className="article" id={props.key}>
 			<div className="image-container">
 				<div className="overlay">
-					<img src="./icons/heart.svg" />
-					<img class="thumbnail" className="play-icon" src="./icons/play.svg" />
-					<img src="./icons/dots.svg" />
+					<img className="heart-icon" src="./icons/heart.svg" />
+					<img  className="play-icon" src="./icons/play.svg" />
+					<img className="dot-icon" src="./icons/dots.svg" />
 				</div>
 				<img
 					className="album-cover"
@@ -26,7 +26,16 @@ export const Article = (props) => {
 				/>
 			</div>
 			<div>
-				<Artist artistName={props.bandName} artistUrl={props.bandUrl} />
+				{props.bandName.map((item, index)=>{
+					return(
+						<Artist
+						className="album-artist"
+						artistName={item.name}
+						artistUrl={item.external_urls.spotify}
+						totalArtist={props.bandName.length}
+						index= {index}
+						/>
+				)})}
 			</div>
 		</article>
 	);
