@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { Artist } from './Artist'; //importing Artist.js component
 import { Album } from './Album'; //importing Album.js component
 
@@ -7,6 +8,7 @@ export const Article = (props) => {
 	return (
 		<article className="article" id={props.key}>
 			<div className="image-container">
+
 				<div className="overlay">
 					<img className="heart-icon" src="./icons/heart.svg" />
 					<img  className="play-icon" src="./icons/play.svg" />
@@ -19,6 +21,7 @@ export const Article = (props) => {
 				/>
 			</div>
 			<div>
+
 				<Album
 					className="album-name"
 					albumTitle={props.albumName}
@@ -36,6 +39,7 @@ export const Article = (props) => {
 						index= {index}
 						/>
 				)})}
+
 			</div>
 		</article>
 	);

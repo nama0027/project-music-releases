@@ -7,6 +7,7 @@ export const Artist = (props) => {
 	console.log(props.artistName[props.index])
 	
 	return (
+
 		<>
 			{(() => {
 				if (props.totalArtist === 2 && props.index === 0) {
@@ -73,5 +74,6 @@ export const Artist = (props) => {
 			})()}
 		</>
 		
+
 	);
 };

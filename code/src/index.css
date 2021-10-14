@@ -1,4 +1,5 @@
 body {
+
 	padding: 0;
 	margin: 0;
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -101,20 +102,6 @@ code {
 }
 
 
-.heading {
-  text-align: center;
-}
-.app-ui{
-
-  display: grid;
-  grid-template-columns:repeat(1,1fr);
-  margin: 20px;
-  padding: 0;
-  
-}
-
-
-
 @media (min-width: 720px) {
 
 .app-ui{
@@ -130,6 +117,6 @@ code {
 .app-ui{
   
   grid-template-columns:repeat(4,1fr);
-  
-}
+
+} 
 }

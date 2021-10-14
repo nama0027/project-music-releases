@@ -6,6 +6,7 @@ console.log(data);
 
 export const App = () => {
 
+
 	return (
 		//react fragment <> </> which are transparent tags, bc you can only have 1 mother container.
 		<>
@@ -14,15 +15,7 @@ export const App = () => {
 			{/* added the container div w/ class name app-ui for styling */}
 			<div className="app-ui">
 				{data.albums.items.map((album) => {
-					let index;
-					const nameofArtist = album.artists.map((item, i) => {
-						index = i;
-						return item.name;
-					}); //variable for getting the artists name from data.jason
-					const artistLink = album.artists.map(
-						(url) => url.external_urls.spotify
-					); //variable for getting the artist url from data.jason
-
+					
 					return (
 						<div className="album-card">
 							<Article
@@ -32,7 +25,7 @@ export const App = () => {
 								albumLink={album.external_urls.spotify} //sending the album url to the article component
 								bandName={album.artists} //sending the name to the article component
 								
-								 //sending the link to the article component
+							//sending the link to the article component
 							/>
 						</div>
 					);
@@ -40,5 +33,4 @@ export const App = () => {
 			</div>
 		</>
 	);
-
-};
+}
