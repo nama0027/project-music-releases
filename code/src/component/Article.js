@@ -21,7 +21,6 @@ export const Article = (props) => {
 				/>
 			</div>
 			<div>
-
 				<Album
 					className="album-name"
 					albumTitle={props.albumName}

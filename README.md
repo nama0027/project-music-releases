@@ -1,12 +1,6 @@
-# Music Releases
-Replace this readme with your own information about your project.
+Music Releases
+This project was a pair-programming collaboration between Naushin Malik, Linnea Isebrink and Madelene Trang. The aim of the project was to build a music site using JSX and React components. To fetch information from a data set, we used map function to iterate over an array. In this project we also learned how to mount many components.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This is the very first encounter with React and it was challenge to get used to the new structure. But we managed and we have met all the requirements and are over all happy with our work.
 
-## The problem
-
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
-
-## View it live
-
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://project-music-albums.netlify.app/

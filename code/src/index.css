@@ -22,7 +22,7 @@ code {
 .app-ui {
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
-	row-gap: 20px;
+	row-gap: 50px;
 	margin: 20px;
 	padding: 0;
 }
@@ -33,6 +33,7 @@ code {
 	color: #ffffff;
 	font-family: Helvetica, sans-serif;
 	font-size: 14px;
+	padding: 0;
 }
 
 .album-url:hover {
@@ -45,12 +46,18 @@ code {
 	color: #a0a0a0;
 	font-family: Helvetica, sans-serif;
 	font-size: 14px;
+	padding: 0;
 }
 
 .artistUrl:hover {
 	text-decoration: underline;
 }
+span{
+	color: #a0a0a0;
+	font-family: Helvetica, sans-serif;
+	font-size: 14px;
 
+}
 /* --------For hover effect --------- */
 .image-container {
 	position: relative;
